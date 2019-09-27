@@ -4,10 +4,13 @@ public class CarResponse {
 
     private String name;
 
+    public String getName() {
+        return name;
+    }
+
     private CarResponse(Builder builder) {
         name = builder.name;
     }
-
 
     public static final class Builder {
         private String name;
